@@ -5,11 +5,11 @@ class PauseScene extends Phaser.Scene {
 
     preload() {
         // Cargar las imágenes para el fondo de pausa y los botones
-        this.load.image('pauseBackground', '/assets/img/titulo.png'); // Título del juego
-        this.load.image('buttonResume', '/assets/img/btn_reanudar.png'); // Botón de reanudar
-        this.load.image('buttonRestart', '/assets/img/btn_reiniciar.png'); // Botón de reiniciar
-        this.load.image('buttonSettings', '/assets/img/selec_opciones.png'); // Botón de opciones
-        this.load.image('buttonMainMenu', '/assets/img/brn_regresar.png'); // Botón de regresar al menú principal
+        this.load.image('pauseBackground', 'assets/img/titulo.png'); // Título del juego
+        this.load.image('buttonResume', 'assets/img/btn_reanudar.png'); // Botón de reanudar
+        this.load.image('buttonRestart', 'assets/img/btn_reiniciar.png'); // Botón de reiniciar
+        this.load.image('buttonSettings', 'assets/img/selec_opciones.png'); // Botón de opciones
+        this.load.image('buttonMainMenu', 'assets/img/brn_regresar.png'); // Botón de regresar al menú principal
     }
 
     create() {

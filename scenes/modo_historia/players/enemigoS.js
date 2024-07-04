@@ -8,20 +8,20 @@ export class EnemigoS {
 
     preload() {
         // Cargar recursos del enemigo
-        this.scene.load.image('atacar1_D', '/assets/img/FIFAS/enemigo1/ataqued1.png');
-        this.scene.load.image('atacar2_D', '/assets/img/FIFAS/enemigo1/ataqued2.png');
-        this.scene.load.image('atacar1_I', '/assets/img/FIFAS/enemigo1/ataquei1.png');
-        this.scene.load.image('atacar2_I', '/assets/img/FIFAS/enemigo1/ataquei2.png');
-        this.scene.load.image('caminar1_D', '/assets/img/FIFAS/enemigo1/caminad1.png');
-        this.scene.load.image('caminar2_D', '/assets/img/FIFAS/enemigo1/caminad2.png');
-        this.scene.load.image('caminar1_I', '/assets/img/FIFAS/enemigo1/caminai1.png');
-        this.scene.load.image('caminar2_I', '/assets/img/FIFAS/enemigo1/caminai2.png');
-        this.scene.load.image('parado1', '/assets/img/FIFAS/enemigo1/parado1.png');
-        this.scene.load.image('parado2', '/assets/img/FIFAS/enemigo1/parado2.png');
-        this.scene.load.image('muerte1_D', '/assets/img/FIFAS/enemigo1/muerted1.png');
-        this.scene.load.image('muerte2_D', '/assets/img/FIFAS/enemigo1/muerted2.png');
-        this.scene.load.image('muerte1_I', '/assets/img/FIFAS/enemigo1/muertei1.png');
-        this.scene.load.image('muerte2_I', '/assets/img/FIFAS/enemigo1/muertei2.png');
+        this.scene.load.image('atacar1_D', 'assets/img/FIFAS/enemigo1/ataqued1.png');
+        this.scene.load.image('atacar2_D', 'assets/img/FIFAS/enemigo1/ataqued2.png');
+        this.scene.load.image('atacar1_I', 'assets/img/FIFAS/enemigo1/ataquei1.png');
+        this.scene.load.image('atacar2_I', 'assets/img/FIFAS/enemigo1/ataquei2.png');
+        this.scene.load.image('caminar1_D', 'assets/img/FIFAS/enemigo1/caminad1.png');
+        this.scene.load.image('caminar2_D', 'assets/img/FIFAS/enemigo1/caminad2.png');
+        this.scene.load.image('caminar1_I', 'assets/img/FIFAS/enemigo1/caminai1.png');
+        this.scene.load.image('caminar2_I', 'assets/img/FIFAS/enemigo1/caminai2.png');
+        this.scene.load.image('parado1', 'assets/img/FIFAS/enemigo1/parado1.png');
+        this.scene.load.image('parado2', 'assets/img/FIFAS/enemigo1/parado2.png');
+        this.scene.load.image('muerte1_D', 'assets/img/FIFAS/enemigo1/muerted1.png');
+        this.scene.load.image('muerte2_D', 'assets/img/FIFAS/enemigo1/muerted2.png');
+        this.scene.load.image('muerte1_I', 'assets/img/FIFAS/enemigo1/muertei1.png');
+        this.scene.load.image('muerte2_I', 'assets/img/FIFAS/enemigo1/muertei2.png');
     }
 
     create(x, y) {

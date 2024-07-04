@@ -1,4 +1,4 @@
-import StoryModeScene from "/scenes/modo_historia/scene_iniciar_modoH.js";
+
 
 class MainMenuScene extends Phaser.Scene {
     constructor() {

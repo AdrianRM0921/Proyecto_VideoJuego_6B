@@ -24,13 +24,13 @@ class StoryModeScene extends Phaser.Scene {
         this.load.spritesheet('background2', 'assets/img/bosque_lluvia.png', { frameWidth: 500, frameHeight: 740 });
         this.load.image('titulo', 'assets/img/titulo.png');
         this.load.image('buttonStart', 'assets/img/boton-de-play.png');
-        this.load.image('Pisos1', '/assets/Mossy-Tileset/Mossy-BackgroundDecoration.png');
-        this.load.image('Pisos2', '/assets/Mossy-Tileset/Mossy-Decorations_Hazards.png');
-        this.load.image('Pisos3', '/assets/Mossy-Tileset/Mossy-FloatingPlatforms.png');
-        this.load.image('Pisos4', '/assets/Mossy-Tileset/Mossy-Hanging_Plants.png');
-        this.load.image('Pisos5', '/assets/Mossy-Tileset/Mossy-MossyHills.png');
-        this.load.image('Pisos6', '/assets/Mossy-Tileset/Mossy-TileSet.png');
-        this.load.tilemapTiledJSON('tilemap', '/scenes/modo_historia/mapaVegetac/mapaVegetacion3.json');
+        this.load.image('Pisos1', 'assets/Mossy-Tileset/Mossy-BackgroundDecoration.png');
+        this.load.image('Pisos2', 'assets/Mossy-Tileset/Mossy-Decorations_Hazards.png');
+        this.load.image('Pisos3', 'assets/Mossy-Tileset/Mossy-FloatingPlatforms.png');
+        this.load.image('Pisos4', 'assets/Mossy-Tileset/Mossy-Hanging_Plants.png');
+        this.load.image('Pisos5', 'assets/Mossy-Tileset/Mossy-MossyHills.png');
+        this.load.image('Pisos6', 'assets/Mossy-Tileset/Mossy-TileSet.png');
+        this.load.tilemapTiledJSON('tilemap', 'scenes/modo_historia/mapaVegetac/mapaVegetacion3.json');
         
 
 

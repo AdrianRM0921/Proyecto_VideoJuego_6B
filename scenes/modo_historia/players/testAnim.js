@@ -11,31 +11,31 @@ export class Player {
 
     preload() {
         // Cargar imágenes necesarias para la barra de vida (si no están cargadas aún)
-        this.scene.load.image('vida1', '/assets/img/FIFAS/VIDA/VIDA100.png');
-        this.scene.load.image('vida2', '/assets/img/FIFAS/VIDA/VIDA75.png');
-        this.scene.load.image('vida3', '/assets/img/FIFAS/VIDA/VIDA50.png');
-        this.scene.load.image('vida4', '/assets/img/FIFAS/VIDA/VIDA25.png');
-        this.scene.load.image('vida5', '/assets/img/FIFAS/VIDA/VIDA1.png');
-        this.scene.load.image('vida6', '/assets/img/FIFAS/VIDA/VIDA0.png');
+        this.scene.load.image('vida1', 'assets/img/FIFAS/VIDA/VIDA100.png');
+        this.scene.load.image('vida2', 'assets/img/FIFAS/VIDA/VIDA75.png');
+        this.scene.load.image('vida3', 'assets/img/FIFAS/VIDA/VIDA50.png');
+        this.scene.load.image('vida4', 'assets/img/FIFAS/VIDA/VIDA25.png');
+        this.scene.load.image('vida5', 'assets/img/FIFAS/VIDA/VIDA1.png');
+        this.scene.load.image('vida6', 'assets/img/FIFAS/VIDA/VIDA0.png');
 
         // Cargar imágenes para las animaciones y sprites del jugador
-        this.scene.load.image('caatc1', '/assets/img/FIFAS/PERSONAJE3/ataque1.png');
-        this.scene.load.image('caatc2', '/assets/img/FIFAS/PERSONAJE3/ataque2.png');
-        this.scene.load.image('caatc3', '/assets/img/FIFAS/PERSONAJE3/ataque3.png');
-        this.scene.load.image('caatcd1', '/assets/img/FIFAS/PERSONAJE3/ataqued1.png');
-        this.scene.load.image('caatcd2', '/assets/img/FIFAS/PERSONAJE3/ataqued2.png');
-        this.scene.load.image('caatcd3', '/assets/img/FIFAS/PERSONAJE3/ataqued3.png');
-        this.scene.load.image('cafre1', '/assets/img/FIFAS/PERSONAJE3/frente1.png');
-        this.scene.load.image('cafre2', '/assets/img/FIFAS/PERSONAJE3/frente2.png');
-        this.scene.load.image('cafre3', '/assets/img/FIFAS/PERSONAJE3/frente3.png');
-        this.scene.load.image('cafre4', '/assets/img/FIFAS/PERSONAJE3/frente4.png');
-        this.scene.load.image('cade1', '/assets/img/FIFAS/PERSONAJE3/corre1d.png');
-        this.scene.load.image('cade2', '/assets/img/FIFAS/PERSONAJE3/corre2d.png');
-        this.scene.load.image('caiz1', '/assets/img/FIFAS/PERSONAJE3/corre1.png');
-        this.scene.load.image('caiz2', '/assets/img/FIFAS/PERSONAJE3/corre2.png');
-        this.scene.load.image('casa1', '/assets/img/FIFAS/PERSONAJE3/paradolado1.png');
-        this.scene.load.image('casa2', '/assets/img/FIFAS/PERSONAJE3/paradolado2.png');
-        this.scene.load.image('muerto', '/assets/img/FIFAS/PERSONAJE3/defensa.png');
+        this.scene.load.image('caatc1', 'assets/img/FIFAS/PERSONAJE3/ataque1.png');
+        this.scene.load.image('caatc2', 'assets/img/FIFAS/PERSONAJE3/ataque2.png');
+        this.scene.load.image('caatc3', 'assets/img/FIFAS/PERSONAJE3/ataque3.png');
+        this.scene.load.image('caatcd1', 'assets/img/FIFAS/PERSONAJE3/ataqued1.png');
+        this.scene.load.image('caatcd2', 'assets/img/FIFAS/PERSONAJE3/ataqued2.png');
+        this.scene.load.image('caatcd3', 'assets/img/FIFAS/PERSONAJE3/ataqued3.png');
+        this.scene.load.image('cafre1', 'assets/img/FIFAS/PERSONAJE3/frente1.png');
+        this.scene.load.image('cafre2', 'assets/img/FIFAS/PERSONAJE3/frente2.png');
+        this.scene.load.image('cafre3', 'assets/img/FIFAS/PERSONAJE3/frente3.png');
+        this.scene.load.image('cafre4', 'assets/img/FIFAS/PERSONAJE3/frente4.png');
+        this.scene.load.image('cade1', 'assets/img/FIFAS/PERSONAJE3/corre1d.png');
+        this.scene.load.image('cade2', 'assets/img/FIFAS/PERSONAJE3/corre2d.png');
+        this.scene.load.image('caiz1', 'assets/img/FIFAS/PERSONAJE3/corre1.png');
+        this.scene.load.image('caiz2', 'assets/img/FIFAS/PERSONAJE3/corre2.png');
+        this.scene.load.image('casa1', 'assets/img/FIFAS/PERSONAJE3/paradolado1.png');
+        this.scene.load.image('casa2', 'assets/img/FIFAS/PERSONAJE3/paradolado2.png');
+        this.scene.load.image('muerto', 'assets/img/FIFAS/PERSONAJE3/defensa.png');
     }
 
     create() {

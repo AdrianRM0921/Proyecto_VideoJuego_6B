@@ -1,6 +1,6 @@
 import { Player } from "./players/testAnim.js";
 import { EnemigoS } from "./players/enemigoS.js";
-import GameOverScene from './players/scene_over.js';
+
 
 class StoryModeScene extends Phaser.Scene {
     constructor() {

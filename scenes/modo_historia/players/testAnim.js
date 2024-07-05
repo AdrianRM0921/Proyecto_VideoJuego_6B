@@ -1,5 +1,3 @@
-
-
 export class Player {
     constructor(scene) {
         this.scene = scene;
@@ -39,7 +37,9 @@ export class Player {
     }
 
     create() {
-        // Crear la barra de vida inicial
+        
+
+        // Crear la barra de vida inicial jugador
         this.barraVida = this.scene.add.image(200, 100, 'vida1').setDepth(1);
         this.barraVida.setScrollFactor(0);
 
@@ -126,11 +126,18 @@ export class Player {
         this.keyK = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.K);
         this.keyL = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.L);
         this.keyW = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
+
+        // Detectar colisiones con los enemigos
+        this.scene.physics.add.overlap(this.Player, this.scene.enemy, this. atacarEnemigo, null, this);
+        
     }
 
     update() {
+
+        
+
         if (this.isDead) {
-            // Detener cualquier otra acción si el jugador está muerto
+        
             this.Player.setVelocityX(0);
             this.Player.setVelocityY(0);
             return;
@@ -142,9 +149,12 @@ export class Player {
         } else if (this.keyK.isDown) {
             this.Player.play('attacar', true);
             this.Player.setVelocityX(0);
+
         } else if (this.keyL.isDown) {
             this.Player.play('attacarD', true);
             this.Player.setVelocityX(0);
+
+
         } else if (this.keyA.isDown) {
             this.Player.play('izquierda', true);
             this.Player.setVelocityX(-700);
@@ -157,10 +167,24 @@ export class Player {
             this.Player.setVelocityY(-600);
             this.Player.play('saltar', true);
         }
+
+
+}
+        
+
+    atacarEnemigo(player, enemy) {
+        if (this.keyK.isDown || this.keyL.isDown) { // Si el jugador está atacando
+            const damage = 10; // Definimos cuánto daño se debe hacer
+            
+            // Verificar colisión entre jugador y enemigo
+            if (this.scene.physics.overlap(player, enemy)) {
+                enemy.receiveDamage(damage); // Llamamos al método para recibir daño en el enemigo
+            }
+        }
     }
 
     recibirDanio(cantidadDanio) {
-        if (this.isDead) return; // No recibir más daño si ya está muerto
+        if (this.isDead) return; 
 
         this.vida -= cantidadDanio;
         if (this.vida < 0) {
@@ -170,7 +194,7 @@ export class Player {
     }
 
     curarVida(cantidadCuracion) {
-        if (this.isDead) return; // No curarse si ya está muerto
+        if (this.isDead) return; 
 
         this.vida += cantidadCuracion;
         if (this.vida > this.maxVida) {

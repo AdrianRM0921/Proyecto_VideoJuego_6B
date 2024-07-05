@@ -15,6 +15,7 @@ class StoryModeScene extends Phaser.Scene {
         this.enemigoS6 = null;
         this.enemigoS7 = null;
         
+        
     }
 
     preload() {
@@ -30,7 +31,7 @@ class StoryModeScene extends Phaser.Scene {
         this.load.image('Pisos4', 'assets/Mossy-Tileset/Mossy-Hanging_Plants.png');
         this.load.image('Pisos5', 'assets/Mossy-Tileset/Mossy-MossyHills.png');
         this.load.image('Pisos6', 'assets/Mossy-Tileset/Mossy-TileSet.png');
-        this.load.tilemapTiledJSON('tilemap', 'scenes/modo_historia/mapaVegetac/mapaVegetacion3.json');
+        this.load.tilemapTiledJSON('tilemap', '/scenes/modo_historia/mapaVegetac/mapaVegetacion3.json');
         
 
 
@@ -39,7 +40,7 @@ class StoryModeScene extends Phaser.Scene {
         this.player.preload();
 
         // Cargar recursos del enemigo
-        this.enemigoS = new EnemigoS(this, null); // El jugador se asignará en create
+        this.enemigoS = new EnemigoS(this, null); 
         this.enemigoS1 = new EnemigoS(this, null);
         this.enemigoS2 = new EnemigoS(this, null);
         this.enemigoS3 = new EnemigoS(this, null);
@@ -125,8 +126,8 @@ class StoryModeScene extends Phaser.Scene {
             this.physics.add.collider(enemy.enemy, layers.Terreno);
             this.physics.add.collider(enemy.enemy, this.player.Player, () => {
                 console.log(`El enemigoS${index} ha colisionado con el jugador`);
-                // Aplicar daño al jugador cuando colisiona con un enemigo
-                const cantidadDanio = 5; // Cantidad de daño que el enemigo hace
+               
+                const cantidadDanio = 5; 
                 this.player.recibirDanio(cantidadDanio);
             });
         });

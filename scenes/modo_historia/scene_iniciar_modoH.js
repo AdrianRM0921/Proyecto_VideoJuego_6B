@@ -31,7 +31,7 @@ class StoryModeScene extends Phaser.Scene {
         this.load.image('Pisos4', 'assets/Mossy-Tileset/Mossy-Hanging_Plants.png');
         this.load.image('Pisos5', 'assets/Mossy-Tileset/Mossy-MossyHills.png');
         this.load.image('Pisos6', 'assets/Mossy-Tileset/Mossy-TileSet.png');
-        this.load.tilemapTiledJSON('tilemap', '/scenes/modo_historia/mapaVegetac/mapaVegetacion3.json');
+        this.load.tilemapTiledJSON('tilemap', 'scenes/modo_historia/mapaVegetac/mapaVegetacion3.json');
         
 
 
